@@ -1,38 +1,95 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+body {
+  background: rgba(0, 68, 255, 0.842);
+  font-size:  20px;
+}
+/**
+ * Сброс стилей у кнопки.
+ * Придётся немного поработать, чтобы получить нейтральный вид.
+*/
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+/* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+}
+a {
+  color: white;
+}
+.input {
+  align-items: center;
+  display: flex;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-title {
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  text-align: center;
+
+}
+li {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-text {
+  font-size: 16px;
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 15px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.add-btn {
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+  background-color: purple;
+  margin-left: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.list {
+  background-color: #fff;
+  display: block;
+  width: 410px;
+  border-radius: 15px;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 8px;
+  color: black;
+}
+
+.btn {
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  width: 100px;
+  background-color: red;
+  margin-left: 10px;
+  margin-left: 50px;
+  color: white;
 }
